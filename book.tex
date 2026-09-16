@@ -1,0 +1,69 @@
+\documentclass[letterpaper,11pt,leqno,openany]{book}
+\usepackage{book}
+\bibliographystyle{book}
+
+% Enter book title to populate PDF metadata:
+\hypersetup {pdftitle={AI-powered Drone Delivery Management Platform}}
+
+% Enter path to BibTeX file with references:
+\newcommand{\bib}{book.bib}
+
+% Enter path to PDF file with figures:
+\newcommand{\pdf}{figures.pdf}
+
+\usepackage{iftex}
+\ifXeTeX
+  \usepackage{fontspec}
+  \setmainfont{Times New Roman}
+\else\ifLuaTeX
+  \usepackage{fontspec}
+  \setmainfont{Times New Roman}
+\else
+  \usepackage[vietnamese,english]{babel}
+\fi\fi
+
+
+\begin{document}
+
+% Enter title:
+\title{AI-powered Drone Delivery Management Platform }
+
+% Enter subtitle (can be commented out):
+
+\subtitle{Group 4}
+
+% Enter author:
+\author{089206011070 - Tran Tan Phat\\
+        079206000967 - Tran Hoang Son\\
+        056206000983 - Nguyen Duy Quy\\
+        054206007389 - Nguyen Quoc Dung\\
+        079206004792 - Le Huy Hoang}
+
+\begin{titlepage}
+\maketitle
+\end{titlepage}
+
+\frontmatter
+
+\tableofcontents
+
+% Enter book structure
+\chapter{Preface}
+\input{preface}
+
+\chapter{Introduction}\label{c:introduction}
+\input{chapter1}
+
+\chapter{Database Requirements Analysis}\label{c:analysis}
+\input{chapter2}
+
+\chapter{Database Design}\label{c:design}
+\input{chapter3}
+
+\chapter{Database Testing and Evaluation}\label{c:test}
+\input{chapter4}
+
+\chapter{Conclusion} \label{c:conclusion}
+\input{chapter5}
+
+\end{document}
